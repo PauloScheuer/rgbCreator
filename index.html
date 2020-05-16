@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="index.css" rel="stylesheet" />
+  <script type="text/javascript" src="main.js"></script>
+  <title>Dynamic Background Color</title>
+</head>
+
+<body>
+  <div id="selector">
+    <section class="each">
+      <label>Red</label>
+      <input type="range" id="red" min="0" max="255" oninput="changebg()">
+      <input type="text" id="redText" disabled class="text" />
+    </section>
+    <section class="each">
+      <label>Green</label>
+      <input type="range" id="green" min="0" max="255" oninput="changebg()">
+      <input type="text" id="greenText" disabled class="text" />
+    </section>
+    <section class="each">
+      <label>Blue</label>
+      <input type="range" id="blue" min="0" max="255" oninput="changebg()">
+      <input type="text" id="blueText" disabled class="text" />
+    </section>
+    <span id="rgb"></span>
+  </div>
+</body>
+
+</html>
